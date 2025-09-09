@@ -1,3 +1,4 @@
+@use "../mixins/media";
 // app/assets/stylesheets/layouts/_container.scss
 
 .container {
@@ -7,7 +8,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @include media(tabletAndUp) {
+  @include media.media(tabletAndUp) {
     padding-right: var(--space-m);
     padding-left: var(--space-m);
     max-width: 60rem;

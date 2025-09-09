@@ -1,4 +1,5 @@
 // app/assets/stylesheets/components/_quote.scss
+@use "../mixins/media";
 
 .quote {
   display: flex;
@@ -12,7 +13,7 @@
   margin-bottom: var(--space-m);
   padding: var(--space-xs);
 
-  @include media(tabletAndUp) {
+  @include media.media(tabletAndUp) {
     padding: var(--space-xs) var(--space-m);
   }
 
